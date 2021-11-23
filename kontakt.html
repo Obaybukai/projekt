@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obay´s Profile</title>
+    <style>
+        ul {
+            list-style-type: none;
+             margin: 0;
+             padding: 0;
+             overflow: hidden;
+             background-color: rgb(94, 91, 91);
+        }
+        li {
+            float:left;
+        }
+
+        li a {
+            display: block;
+             color: white;
+             text-align: right;
+             padding: 14px 16px;
+             text-decoration: none;
+        }
+
+        li a:hover {
+             background-color: #111;
+        }
+        .h1{
+            display: flex;
+            font-style: italic;
+            font-family: monospace;
+            font-weight: bold;
+            align-content: center;
+            justify-content: center;
+            background-color: lightslategray;
+        } 
+        .pic{
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(197, 201, 201);
+        }  
+        .obay{
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            align-items: left;
+            flex-direction: column;
+        } 
+        .contact{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            background-color: rgb(197, 201, 201);
+        }
+        input[type=button], input[type=submit],    input[type=reset] {
+         background-color: #4CAF50;
+         border: none;
+         color: white;
+         padding: 16px 32px;
+         text-decoration: none;
+         margin: 4px 2px;
+         cursor: pointer;
+        }
+        .form{
+            display: flex;
+            align-content: center;
+            flex-direction: column;
+            justify-content: center;
+            flex: 1; 
+            margin-left: 130px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+
+        }
+        .map{
+            display: flex;
+            margin-right: 30px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="h1">
+        <h1>Obay Albukai´s Profile</h1>
+    </div>
+    <div>
+      <ul class="ul">
+        <li class="li"><a class="a" href="index.html">Home</a></li>
+        <li class="LI"><a class="a" href="Study.html">Studium</a></li>
+        <li class="LI"><a class="a" href="./experience.html">Erfahrung</a></li>
+        <li class="li"><a class="a" href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+       
+    <div class="contact">
+        <div class="map">
+        <iframe width="520" height="450" frameborder="10" scrolling="no" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Luxemburger%20Str.%20120%20K%C3%B6ln+(Obay%20Albukai)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://www.unfallversicherungen.at/'>unfallversicherungen.at</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=4aa8828fa377f37c6599a6d209b54d9f4e3f30c4'>
+
+        </script>
+        </div>
+        <div>
+        <form class="form">
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Name">
+            <br>
+            <label for="lname">Nachname</label>
+            <input type="text" id="lname" name="lastname" placeholder="Nachname">
+            <br>
+            <label for="country">Land</label>
+            <select id="country" name="Land">
+              <option value="Deutschland">Deutschland</option>
+              <option value="Schweiz">Schweiz</option>
+              <option value="AT">Österreich</option>
+            </select>
+            <br>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Deine Nachricht" style="height:200px; width: 200px;"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+        </div>
+    </div>
+
+    <div>
+        <footer>
+            <ul class="ul">
+                <li class="li"><a class="a" href="imressum.html">Impressum</a></li>
+                <li class="LI"><a class="a" href="Datenschutz">Datenschutz</a></li>
+            </ul>
+
+        </footer>
+    </div>
+    
+</body>
+</html>
